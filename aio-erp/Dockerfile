@@ -6,7 +6,7 @@ WORKDIR /app/src
 RUN \
   set -ex && \
   git clone https://github.com/axelor/abs-webapp.git axelor-erp && \
-  cd axelor-erp && git reset --hard v5.3.3 cd .. && \
+  cd axelor-erp && git reset --hard v5.3.3 && cd .. && \
   sed -e 's|git@github.com:|https://github.com/|' -i axelor-erp/.gitmodules && \
   cd axelor-erp && \
   git checkout master && \
