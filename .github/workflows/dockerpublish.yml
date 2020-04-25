@@ -23,5 +23,5 @@ jobs:
 
       - name: Push image
         run: |
-          docker tag image mtparet2/axelor:${{ github.ref }}
-          docker push mtparet2/axelor:${{ github.ref }}
+          docker tag image mtparet2/axelor:v5.3.3
+          docker push mtparet2/axelor:v5.3.3
